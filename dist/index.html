@@ -8,6 +8,105 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
+    <style>
+            .schedule-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .schedule-day {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .schedule-day:last-child {
+            border-bottom: none;
+        }
+
+        .day-header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .day-header h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .day-header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .day-events {
+            padding: 0;
+        }
+
+        .event-item {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .event-item:last-child {
+            border-bottom: none;
+        }
+
+        .event-time {
+            min-width: 120px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .event-title {
+            flex: 1;
+        }
+
+        .paper-id {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+        }
+
+        .tea-break {
+            background: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .keynote-speaker {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+
+        .schedule-note {
+            text-align: center;
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .event-item {
+                flex-direction: column;
+            }
+
+            .event-time {
+                margin-bottom: 5px;
+            }
+        }
+</style>
 <body>
     <header>
         <div class="container header-container">
@@ -314,146 +413,103 @@
             </section>
 
 
-            <section>
-                <h2 class="section-title">Conference Schedule Preview</h2>
-                <div class="schedule-container">
-                    <div class="schedule-day">
-                        <div class="day-header">
-                            <h3>Day 1 - December 13, 2025 (Saturday). TBD</h3>
-                        </div>
+  <!<section>
+            <h2 class="section-title">Conference Schedule Preview</h2>
+            <div class="schedule-container">
+                <!-- Day 1 -->
+                <div class="schedule-day">
+                    <div class="day-header">
+                        <h3>Day 1 - December 13, 2025 (Saturday)</h3>
+                        <p>Opening Ceremony, Keynote Talks, and Technical Sessions</p>
                     </div>
-                    <div class="schedule-day">
-                        <div class="day-header">
-                            <h3>Day 2 - December 14, 2025 (Sunday). TBD</h3>
+                    <div class="day-events">
+                        <div class="event-item">
+                            <div class="event-time">08:30-08:50</div>
+                            <div class="event-title">Opening Ceremony</div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-time">08:50-09:35</div>
+                            <div class="event-title">Keynote talk
+                                <div class="keynote-speaker">Prof. Nadia Thalmann</div>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-time">09:35-10:20</div>
+                            <div class="event-title">Keynote talk
+                                <div class="keynote-speaker">Prof. Eugene Ch'ng</div>
+                            </div>
+                        </div>
+                        <div class="tea-break">10:20-10:40 Tea Break</div>
+                        <div class="event-item">
+                            <div class="event-time">10:40-11:25</div>
+                            <div class="event-title">Keynote talk
+                                <div class="keynote-speaker">Prof. Haining Liang</div>
+                            </div>
+                        </div>
+<!--                        <div class="event-item">-->
+<!--                            <div class="event-time">11:25-12:30</div>-->
+<!--                            <div class="tea-break">Lunch Break</div>-->
+<!--                        </div>-->
+                        <div class="tea-break">11:25-12:30 Lunch Break</div>
+                        <div class="event-item">
+                            <div class="event-time">14:00-16:00</div>
+                            <div class="event-title">Session A: Main Track - Human-Computer Interaction and User Experience</div>
+                        </div>
+                        <div class="tea-break">16:00-16:20 Tea Break</div>
+                        <div class="event-item">
+                            <div class="event-time">16:20-18:20</div>
+                            <div class="event-title">Session B: Main Track - Human-Computer Interaction and User Experience</div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-time">19:00-21:00</div>
+                            <div class="event-title">Welcome Reception</div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Conference Schedule Preview -->
-<!--            <section>-->
-<!--                <h2 class="section-title">Conference Schedule Preview</h2>-->
-<!--                <div class="schedule-container">-->
-<!--                    <div class="schedule-day">-->
-<!--                        <div class="day-header">-->
-<!--                            <h3>Day 1 - December 10, 2025 (Wednesday)</h3>-->
-<!--                            <p>Opening Ceremony and Keynote Presentations</p>-->
-<!--                        </div>-->
-<!--                        <div class="day-events">-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">08:30 - 09:30</div>-->
-<!--                                <div class="event-title">Registration and Check-in</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">09:30 - 10:00</div>-->
-<!--                                <div class="event-title">Opening Ceremony</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">10:00 - 11:00</div>-->
-<!--                                <div class="event-title">Keynote I</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">11:00 - 12:00</div>-->
-<!--                                <div class="event-title">Keynote II</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">12:00 - 13:30</div>-->
-<!--                                <div class="event-title">Lunch</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">13:30 - 15:30</div>-->
-<!--                                <div class="event-title">Paper Sessions (Tracks A/B)</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">15:30 - 16:00</div>-->
-<!--                                <div class="event-title">Coffee Break</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">16:00 - 18:00</div>-->
-<!--                                <div class="event-title">Paper Sessions (Tracks A/B)</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">18:30 - 20:30</div>-->
-<!--                                <div class="event-title">Welcome Reception</div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
 
-<!--                    <div class="schedule-day">-->
-<!--                        <div class="day-header">-->
-<!--                            <h3>Day 2 - December 11, 2025 (Thursday)</h3>-->
-<!--                            <p>Paper Presentations and Panel Discussions</p>-->
+                <!-- Day 2 -->
+                <div class="schedule-day">
+                    <div class="day-header">
+                        <h3>Day 2 - December 14, 2025 (Sunday)</h3>
+                        <p>Keynote Talks, Workshops, Technical Sessions and Closing Ceremony</p>
+                    </div>
+                    <div class="day-events">
+                        <div class="event-item">
+                            <div class="event-time">09:00-09:45</div>
+                            <div class="event-title">Keynote talk
+                                <div class="keynote-speaker">Prof. Bin Sheng</div>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-time">09:45-10:30</div>
+                            <div class="event-title">Keynote talk
+                                <div class="keynote-speaker">Prof. Yuhan Ji</div>
+                            </div>
+                        </div>
+                        <div class="tea-break">10:30-11:00 Tea Break</div>
+                        <div class="event-item">
+                            <div class="event-time">11:00-12:00</div>
+                            <div class="event-title">Workshop: Video Understanding and Grounding (VUG) in the Age of AI and the Metaverse</div>
+                        </div>
+<!--                        <div class="event-item">-->
+<!--                            <div class="event-time">12:00-13:30</div>-->
+<!--                            <div class="tea-break">Lunch Break</div>-->
 <!--                        </div>-->
-<!--                        <div class="day-events">-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">09:00 - 10:00</div>-->
-<!--                                <div class="event-title">Keynote III</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">10:00 - 10:30</div>-->
-<!--                                <div class="event-title">Coffee Break</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">10:30 - 12:00</div>-->
-<!--                                <div class="event-title">Paper Sessions (Tracks A/B)</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">12:00 - 13:30</div>-->
-<!--                                <div class="event-title">Lunch</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">13:30 - 15:30</div>-->
-<!--                                <div class="event-title">Panel Discussion: Metaverse and AI</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">15:30 - 16:00</div>-->
-<!--                                <div class="event-title">Coffee Break</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">16:00 - 18:00</div>-->
-<!--                                <div class="event-title">Poster and Demo Exhibition</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">18:30 - 20:30</div>-->
-<!--                                <div class="event-title">Free Evening</div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="schedule-day">-->
-<!--                        <div class="day-header">-->
-<!--                            <h3>Day 3 - December 12, 2025 (Friday)</h3>-->
-<!--                            <p>Workshops and Closing Ceremony</p>-->
-<!--                        </div>-->
-<!--                        <div class="day-events">-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">09:00 - 10:30</div>-->
-<!--                                <div class="event-title">Paper Sessions (Tracks A/B)</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">10:30 - 11:00</div>-->
-<!--                                <div class="event-title">Coffee Break</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">11:00 - 12:30</div>-->
-<!--                                <div class="event-title">Workshop: Cutting-edge VR/AR Development</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">12:30 - 14:00</div>-->
-<!--                                <div class="event-title">Lunch</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">14:00 - 15:30</div>-->
-<!--                                <div class="event-title">Best Paper Awards</div>-->
-<!--                            </div>-->
-<!--                            <div class="event-item">-->
-<!--                                <div class="event-time">15:30 - 16:30</div>-->
-<!--                                <div class="event-title">Closing Ceremony</div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <p class="schedule-note">* The specific schedule may be adjusted, and the final schedule will be announced before the conference</p>-->
-<!--            </section>-->
+                        <div class="tea-break">12:00-13:30 Lunch Break</div>
+                        <div class="event-item">
+                            <div class="event-time">14:00-17:00</div>
+                            <div class="event-title">Technical Sessions</div>
+                        </div>
+                        <div class="tea-break">17:00-17:20 Tea Break</div>
+                        <div class="event-item">
+                            <div class="event-time">17:20-18:20</div>
+                            <div class="event-title">Closing Ceremony and Awards</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="schedule-note">* The specific schedule may be adjusted, and the final schedule will be announced before the conference</p>
+        </section>
 
             <!-- Venue Location Map -->
             <section>
