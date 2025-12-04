@@ -34,7 +34,7 @@
     <main>
         <div class="container">
 <section>
-    <h1 class="section-title">Conference Program</h1>
+    <h1 class="section-title">Conference Program </h1>
 
     <p class="section-description">ACM SIGGRAPH VRCAI 2025 will be held from December 13-14, 2025, in Macau, China. Below is the detailed program for the conference.</p>
 
@@ -42,215 +42,582 @@
         <p><strong>Note:</strong> This is a preliminary schedule and is subject to change. The exact paper sessions and presentation times will be determined after paper acceptance notifications.</p>
     </div>
 </section>
+    <style>
 
-<section class="schedule-container">
-    <h2 class="section-title">Day 1 - December 13, 2025 (Saturday)</h2>
-    <div class="schedule-day">
-        <div class="day-header">
-            <h3>TBD</h3>
-             </div>
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: #3498db;
+        }
+
+        .schedule-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .schedule-day {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .schedule-day:last-child {
+            border-bottom: none;
+        }
+
+        .day-header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .day-header h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .day-header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .day-sessions {
+            padding: 0;
+        }
+
+        .session {
+            border-bottom: 1px solid #eee;
+            padding: 0;
+        }
+
+        .session:last-child {
+            border-bottom: none;
+        }
+
+        .session-header {
+            background: #3498db;
+            color: white;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .session-header:hover {
+            background: #2980b9;
+        }
+
+        .session-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .session-time-location {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .session-content {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .session-content.active {
+            max-height: 1000px;
+            padding: 20px;
+        }
+
+        .event-item {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .event-item:last-child {
+            border-bottom: none;
+        }
+
+        .event-time {
+            min-width: 120px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .event-title {
+            flex: 1;
+        }
+
+        .paper-id {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+        }
+
+        .tea-break {
+            background: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .keynote-speaker {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+
+        .schedule-note {
+            text-align: center;
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+
+    </style>
+    <div class="container">
+        <section>
+            <h2 class="section-title">Conference Schedule Preview (Click to see details)</h2>
+            <div class="schedule-container">
+                <!-- Day 1 -->
+                <div class="schedule-day">
+                    <div class="day-header">
+                        <h3>Day 1 - December 13, 2025 (Saturday)</h3>
+                        <p>Opening Ceremony, Keynote Talks, and Technical Sessions</p>
+                    </div>
+                    <div class="day-sessions">
+                        <!-- Session A -->
+                        <div class="session">
+                            <div class="session-header">
+                                <div class="session-title">Session A: Opening Ceremony and Keynote Talks</div>
+                                <div class="session-time-location">08:30-11:30, Room A</div>
+                            </div>
+                            <div class="session-content">
+                                <div class="event-item">
+                                    <div class="event-time">08:30-08:50</div>
+                                    <div class="event-title">Opening Ceremony</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">08:50-09:35</div>
+                                    <div class="event-title">Keynote talk
+                                        <div class="keynote-speaker">Prof. Nadia Thalmann</div>
+                                    </div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">09:35-10:20</div>
+                                    <div class="event-title">Keynote talk
+                                        <div class="keynote-speaker">Prof. Eugene Ch'ng</div>
+                                    </div>
+                                </div>
+                                <div class="tea-break">10:20-10:40 Tea Break</div>
+                                <div class="event-item">
+                                    <div class="event-time">10:40-11:25</div>
+                                    <div class="event-title">Keynote talk
+                                        <div class="keynote-speaker">Prof. Haining Liang</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Session B -->
+                        <div class="session">
+                            <div class="session-header">
+                                <div class="session-title">Session B: Main Track - Human-Computer Interaction and User Experience</div>
+                                <div class="session-time-location">14:00-16:00, Room A</div>
+                            </div>
+                            <div class="session-content">
+                                <div class="event-item">
+                                    <div class="event-time">14:00</div>
+                                    <div class="event-title"><span class="paper-id">2021</span> Enhancing Quantum Computing Education Through Virtual Reality</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">14:20</div>
+                                    <div class="event-title"><span class="paper-id">6284</span> Entangled Orbits: A Posthuman Framework for Collective Memory in VR</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">14:40</div>
+                                    <div class="event-title"><span class="paper-id">3150</span> Immersive Virtual Scenes based on Multiple Reconstruction Technologies</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">15:00</div>
+                                    <div class="event-title"><span class="paper-id">3474</span> Event-driven Multi-agent Concurrent and Collaborative Coordination</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">15:20</div>
+                                    <div class="event-title"><span class="paper-id">2166</span> 3D Modeling and Web Visualization of Cloud Campus: A Technical Route Integrating Python Point Cloud Processing, Unity3D, and Three.js</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">15:40</div>
+                                    <div class="event-title"><span class="paper-id">0374</span> Experiential Learning in VR: An Integrated System for Ophthalmic Science Popularization</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">15:50</div>
+                                    <div class="event-title"><span class="paper-id">0740</span> Similarity-Aware Behavioral Biometrics for Detecting User Familiarity in VR</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tea Break -->
+                        <div class="tea-break">16:00-16:20 Tea Break</div>
+
+                        <!-- Session C -->
+                        <div class="session">
+                            <div class="session-header">
+                                <div class="session-title">Session C: Main Track - Human-Computer Interaction and User Experience</div>
+                                <div class="session-time-location">16:20-18:20, Room A</div>
+                            </div>
+                            <div class="session-content">
+                                <div class="event-item">
+                                    <div class="event-time">16:20</div>
+                                    <div class="event-title"><span class="paper-id">2007</span> Tangible Twins: A Haptic Proxy and Digital Twin Framework for Virtual Physics Experiments</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">16:40</div>
+                                    <div class="event-title"><span class="paper-id">8134</span> Audiovisual Congruence in Virtual Reality: Effects on Speech Intelligibility for Native and Non-Native Listeners</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">17:00</div>
+                                    <div class="event-title"><span class="paper-id">7161</span> Purchase Intention in Augmented Reality vs. Web Shopping: A Multimodal Exploration</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">17:20</div>
+                                    <div class="event-title"><span class="paper-id">3732</span> Smartphone-Based Augmented Reality for Calligraphy Instruction: Randomized Evidence on Self-Efficacy, Flow, and Artifact Quality</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">17:30</div>
+                                    <div class="event-title"><span class="paper-id">5806</span> Practice-Along-Watching in Panoramic VR: A Novel Human-AI Collaboration Genre for Demonstration-Based Training</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">17:40</div>
+                                    <div class="event-title"><span class="paper-id">7716</span> Reality Fusion for Basic Life Support: Mixed Reality and Manikin Training with Trainers in the Loop</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">17:50</div>
+                                    <div class="event-title"><span class="paper-id">8345</span> TCM-LearnAR: A Gamified Learning Application Based on AR and 3D Interactive Technology for Enhancing Cultural Heritage Education Traditional Chinese Medicine</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">18:00</div>
+                                    <div class="event-title"><span class="paper-id">0959</span> Redesigning UI for Teleoperating ROV Using Apple Vision Pro: A Study on Usability and Workload</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">18:10</div>
+                                    <div class="event-title"><span class="paper-id">1653</span> From Hands to Algorithms: Translating Tacit Knowledge of Traditional Chinese Carpentry into Digital Intelligence</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Session D -->
+                        <div class="session">
+                            <div class="session-header">
+                                <div class="session-title">Session D: Workshop-1 - Digital Heritage in the Age of AI and the Metaverse</div>
+                                <div class="session-time-location">14:00-16:00, Room B</div>
+                            </div>
+                            <div class="session-content">
+                                <div class="event-item">
+                                    <div class="event-time">14:00-16:00</div>
+                                    <div class="event-title">NVIDIA's Workshop: "Accelerating Generative AI and Multi-Agent Systems with NVIDIA DGX Spark and NIM"
+                                        <div class="keynote-speaker">Dr Ginny Wong, Senior Scientist, NVIDIA AI Technology Center, NVIDIA & Dr Charles Cheung, Deputy Director, NVIDIA AI Technology Center, NVIDIA</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tea Break -->
+                        <div class="tea-break">16:00-16:20 Tea Break</div>
+
+                        <!-- Session E -->
+                        <div class="session">
+                            <div class="session-header">
+                                <div class="session-title">Session E: Workshop-1 - Digital Heritage in the Age of AI and the Metaverse</div>
+                                <div class="session-time-location">16:20-18:20, Room B</div>
+                            </div>
+                            <div class="session-content">
+                                <div class="event-item">
+                                    <div class="event-time">16:20</div>
+                                    <div class="event-title"><span class="paper-id">0893</span> Research on an Immersive Virtual Simulation System for Meteorological Science Popularization Based on Multi-Source Data</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">16:40</div>
+                                    <div class="event-title"><span class="paper-id">3729</span> From Watching to Entering: A VR Approach to Cinematic Storytelling as Digital Heritage</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">17:00</div>
+                                    <div class="event-title"><span class="paper-id">6426</span> Towards Inclusive Digital Futures of Cultural Heritage: Insights from a Critical Discourse Analysis of UNESCO Dialogues</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">17:20</div>
+                                    <div class="event-title"><span class="paper-id">9892</span> Epistemoverse: Toward an AI-Driven Knowledge Metaverse for Intellectual Heritage Preservation</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">17:40</div>
+                                    <div class="event-title"><span class="paper-id">6228</span> A Self-Directed, Home-Like XR System for Sustained Intangible Cultural Heritage Practice: An Ikebana Case Study</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">17:50</div>
+                                    <div class="event-title"><span class="paper-id">0602</span> Immersion in Virtual Cultural Heritage: Framework, Research Landscape, Future Directions, and Ongoing Study</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">18:00</div>
+                                    <div class="event-title"><span class="paper-id">1653</span> From Hands to Algorithms: Translating Tacit Knowledge of Traditional Chinese Carpentry into Digital Intelligence</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">18:10</div>
+                                    <div class="event-title"><span class="paper-id">8568</span> Assessing Student Acceptance of an LLM-Integrated VR Public Speaking Simulation via Extended UTAUT</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="schedule-day">
+                    <div class="day-header">
+                        <h3>Day 2 - December 14, 2025 (Sunday)</h3>
+                        <p>Keynote Talks, Workshops, Technical Sessions and Closing Ceremony</p>
+                    </div>
+                    <div class="day-sessions">
+                        <!-- Session F -->
+                        <div class="session">
+                            <div class="session-header">
+                                <div class="session-title">Session F: Keynote Talks</div>
+                                <div class="session-time-location">09:00-10:30, Room A</div>
+                            </div>
+                            <div class="session-content">
+                                <div class="event-item">
+                                    <div class="event-time">09:00-09:45</div>
+                                    <div class="event-title">Keynote talk
+                                        <div class="keynote-speaker">Prof. Bin Sheng</div>
+                                    </div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">09:45-10:30</div>
+                                    <div class="event-title">Keynote talk
+                                        <div class="keynote-speaker">Prof. Yuhan Ji</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tea Break -->
+                        <div class="tea-break">10:30-11:00 Tea Break</div>
+
+                        <!-- Session G -->
+                        <div class="session">
+                            <div class="session-header">
+                                <div class="session-title">Session G: Workshop-2 - Video Understanding and Grounding (VUG) in the Age of AI and the Metaverse</div>
+                                <div class="session-time-location">11:00-12:00, Room A</div>
+                            </div>
+                            <div class="session-content">
+                                <div class="event-item">
+                                    <div class="event-time">11:00</div>
+                                    <div class="event-title"><span class="paper-id">4353</span> Efficient Projection of Panoramic Video onto Cube-Based Layouts for Immersive CAVE Visualization</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">11:20</div>
+                                    <div class="event-title"><span class="paper-id">4875</span> ALTSA: Adaptive Latent-space Teacher-Student Architecture for Emotion Recognition in Conversation</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">11:40</div>
+                                    <div class="event-title"><span class="paper-id">9441</span> InfoFuse: A Post-Process Video-Mocap Information Fusion Approach for Human-Centered Interaction Research</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Session H -->
+                        <div class="session">
+                            <div class="session-header">
+                                <div class="session-title">Session H: Main Track II (AR)</div>
+                                <div class="session-time-location">11:00-12:00, Room B</div>
+                            </div>
+                            <div class="session-content">
+                                <div class="event-item">
+                                    <div class="event-time">11:00</div>
+                                    <div class="event-title"><span class="paper-id">7177</span> Comparing Mobile and Head-Mounted AR Platforms: Enhancing Interactivity and Immersion in Educational Gaming</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">11:20</div>
+                                    <div class="event-title"><span class="paper-id">7872</span> Keypoint-based Framework for Multi-instance Instrument Pose Estimation in AR Surgical Navigation</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">11:40</div>
+                                    <div class="event-title"><span class="paper-id">9660</span> Product2Vec: Inductive and Unsupervised Representation Learning on BIM Products</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Session I -->
+                        <div class="session">
+                            <div class="session-header">
+                                <div class="session-title">Session I: Workshop-3 - AI-Powered Medical Image Analysis and Computer Graphics in Healthcare</div>
+                                <div class="session-time-location">14:00-17:10, Room B</div>
+                            </div>
+                            <div class="session-content">
+                                <div class="event-item">
+                                    <div class="event-time">14:00</div>
+                                    <div class="event-title"><span class="paper-id">3221</span> A Smartphone Application for Heart Rate and Blood Pressure Measurement Using AlexNet-FPN and Image Photoplethysmography</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">14:20</div>
+                                    <div class="event-title"><span class="paper-id">5891</span> WildSplatting: Unposed Incremental 3D Gaussian Splatting Reconstruction in the Wild</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">14:40</div>
+                                    <div class="event-title"><span class="paper-id">8607</span> Mindscapes: Exploring EEG-Driven Emotional Expression in VR for Supporting Emotional Relief and Mental Well-being</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">15:00</div>
+                                    <div class="event-title"><span class="paper-id">5891</span> WildSplatting: Unposed Incremental 3D Gaussian Splatting Reconstruction in the Wild</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">15:20</div>
+                                    <div class="event-title"><span class="paper-id">2883</span> SCGC: Sparse Control-Guided Gaussian Splatting with Contrastive Learning</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">15:40</div>
+                                    <div class="event-title"><span class="paper-id">6794</span> Investigating the Utility of Scene-Combined Music Beat Click Games in Stress and Anxiety Reduction</div>
+                                </div>
+
+                                <!-- Tea Break -->
+                                <div class="tea-break">16:00-16:20 Tea Break</div>
+
+                                <div class="event-item">
+                                    <div class="event-time">16:20</div>
+                                    <div class="event-title"><span class="paper-id">3588</span> Edge-Enhanced Deep Super-Resolution for Thermal Imagery (EEDSR)</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">16:30</div>
+                                    <div class="event-title"><span class="paper-id">6200</span> From Line Sketches to Contextualized Scenes: An AR Scaffold for Narrative Drawing Based on Sketch Recognition and Its Motivational Effects</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">16:40</div>
+                                    <div class="event-title"><span class="paper-id">7027</span> Design and Empirical Analysis of a Timeline-Based Serious Game for Secondary School History Learning</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">16:50</div>
+                                    <div class="event-title"><span class="paper-id">3729</span> From Watching to Entering: A VR Approach to Cinematic Storytelling as Digital Heritage</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">17:00</div>
+                                    <div class="event-title"><span class="paper-id">3601</span> Audio-Driven 3D Gaussian Avatars with Robust Regularization for Precise Countenance and Full-Body Modeling</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Session J -->
+                        <div class="session">
+                            <div class="session-header">
+                                <div class="session-title">Session J: Main Track - Immersive Virtual Environment</div>
+                                <div class="session-time-location">14:00-17:00, Room C</div>
+                            </div>
+                            <div class="session-content">
+                                <div class="event-item">
+                                    <div class="event-time">14:00</div>
+                                    <div class="event-title"><span class="paper-id">2680</span> Designing Usable Information Display in Immersive Virtual Environments</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">14:20</div>
+                                    <div class="event-title"><span class="paper-id">6130</span> Say it or AI it: Evaluating Hands-Free Text Correction in Virtual Reality</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">14:40</div>
+                                    <div class="event-title"><span class="paper-id">5459</span> Performance Evaluation of Virtual Laboratory Reconstruction Using PointNet: A Comparative Study of Poisson and Delaunay Triangulation Methods</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">15:00</div>
+                                    <div class="event-title"><span class="paper-id">7948</span> SISA: Engaging with Performing Arts Through Spatialized Interaction with Segmented-audios in Immersive Environments</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">15:30</div>
+                                    <div class="event-title"><span class="paper-id">4605</span> PaintingStrokeAR: An Interactive Art System with Stroke-by-Stroke AI Painting and Augmented Reality</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">15:40</div>
+                                    <div class="event-title"><span class="paper-id">8557</span> SepScene: Proxy-Guided Generation of Separable Scenes</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">15:50</div>
+                                    <div class="event-title"><span class="paper-id">9318</span> Players' Understanding of Adaptive AI-Generated Content and Its Relationship to Engagement and Performance in VR Exergame</div>
+                                </div>
+
+                                <!-- Tea Break -->
+                                <div class="tea-break">16:00-16:20 Tea Break</div>
+
+                                <div class="event-item">
+                                    <div class="event-time">16:20</div>
+                                    <div class="event-title"><span class="paper-id">8213</span> Remember Me, Not Save Me: A Collective Memory System for Evolving Virtual Identities in Augmented Reality</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">16:30</div>
+                                    <div class="event-title"><span class="paper-id">9435</span> Virtual Reality for Social Anxiety Disorder: A Meta-Analysis of Treatment Efficacy and Moderators</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">16:40</div>
+                                    <div class="event-title"><span class="paper-id">6214</span> Evaluating the Effectiveness of VR-Based Mindfulness Training for Stress Reduction in College Students</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">16:50</div>
+                                    <div class="event-title"><span class="paper-id">7823</span> The Impact of Avatar Representation on User Engagement in Virtual Meetings</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Closing Ceremony -->
+                        <div class="session">
+                            <div class="session-header">
+                                <div class="session-title">Closing Ceremony and Awards</div>
+                                <div class="session-time-location">17:20-18:20, Room A</div>
+                            </div>
+                            <div class="session-content">
+                                <div class="event-item">
+                                    <div class="event-time">17:20-17:50</div>
+                                    <div class="event-title">Best Paper Awards</div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="event-time">17:50-18:20</div>
+                                    <div class="event-title">Closing Remarks</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="schedule-note">* The specific schedule may be adjusted, and the final schedule will be announced before the conference</p>
+        </section>
     </div>
-<!--    <div class="schedule-day">-->
-<!--        <div class="day-header">-->
-<!--            <h3>Opening Ceremony and Keynote Presentations</h3>-->
-<!--            <p>Venue: International Conference Hall, Building A, Macau University of Science and Technology</p>-->
-<!--        </div>-->
-<!--        <div class="day-events">-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">08:30 - 09:30</div>-->
-<!--                <div class="event-title">Registration and Check-in</div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">09:30 - 10:00</div>-->
-<!--                <div class="event-title">Opening Ceremony</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Welcome Address by Conference Chairs</p>-->
-<!--                    <p>Guest Speeches</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">10:00 - 11:00</div>-->
-<!--                <div class="event-title">Keynote I</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Speaker: TBD</p>-->
-<!--                    <p>Topic: Virtual Reality Technology Trends in the Metaverse Era</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">11:00 - 12:00</div>-->
-<!--                <div class="event-title">Keynote II</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Speaker: TBD</p>-->
-<!--                    <p>Topic: AI-Empowered Immersive Experiences</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">12:00 - 13:30</div>-->
-<!--                <div class="event-title">Lunch</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Location: University Cafeteria</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">13:30 - 15:30</div>-->
-<!--                <div class="event-title">Paper Sessions (Tracks A/B)</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Track A: Foundational Theory (Room 203, Building A)</p>-->
-<!--                    <p>Track B: Interaction and Interfaces (Room 205, Building A)</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">15:30 - 16:00</div>-->
-<!--                <div class="event-title">Coffee Break</div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">16:00 - 18:00</div>-->
-<!--                <div class="event-title">Paper Sessions (Tracks A/B)</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Track A: Digital Humans and Virtual Communities (Room 203, Building A)</p>-->
-<!--                    <p>Track B: Application Domains (Room 205, Building A)</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">18:30 - 20:30</div>-->
-<!--                <div class="event-title">Welcome Reception</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Location: Banquet Hall, MUST Hotel</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-</section>
 
-<section class="schedule-container">
-    <h2 class="section-title">Day 2 - December 14, 2025 (Sunday)</h2>
-    <div class="schedule-day">
-        <div class="day-header">
-            <h3>TBD</h3>
-             </div>
-    </div>
-<!--    <div class="schedule-day">-->
-<!--        <div class="day-header">-->
-<!--            <h3>Paper Presentations and Panel Discussions</h3>-->
-<!--            <p>Venue: International Conference Hall, Building A, Macau University of Science and Technology</p>-->
-<!--        </div>-->
-<!--        <div class="day-events">-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">09:00 - 10:00</div>-->
-<!--                <div class="event-title">Keynote III</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Speaker: TBD</p>-->
-<!--                    <p>Topic: Applications of Virtual Reality in Healthcare</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">10:00 - 10:30</div>-->
-<!--                <div class="event-title">Coffee Break</div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">10:30 - 12:00</div>-->
-<!--                <div class="event-title">Paper Sessions (Tracks A/B)</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Track A: AI and VR/AR Integration (Room 203, Building A)</p>-->
-<!--                    <p>Track B: Interactive Systems (Room 205, Building A)</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">12:00 - 13:30</div>-->
-<!--                <div class="event-title">Lunch</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Location: University Cafeteria</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">13:30 - 15:30</div>-->
-<!--                <div class="event-title">Panel Discussion: Metaverse and AI</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Moderator: TBD</p>-->
-<!--                    <p>Panelists: TBD</p>-->
-<!--                    <p>Content: Discussing the integrated development of AI and VR/AR technologies in the metaverse era</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">15:30 - 16:00</div>-->
-<!--                <div class="event-title">Coffee Break</div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">16:00 - 18:00</div>-->
-<!--                <div class="event-title">Poster and Demo Exhibition</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Location: Main Hall, Building A</p>-->
-<!--                    <p>Authors are required to be present at their posters/demos to discuss their work with attendees</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">18:30 - 20:30</div>-->
-<!--                <div class="event-title">Free Evening</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Tour of Macau Historic Center (Optional)</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-</section>
-
-<!--<section class="schedule-container">-->
-<!--    <h2 class="section-title">Day 3 - December 12, 2025 (Friday)</h2>-->
-<!--    <div class="schedule-day">-->
-<!--        <div class="day-header">-->
-<!--            <h3>Workshops and Closing Ceremony</h3>-->
-<!--            <p>Venue: International Conference Hall, Building A, Macau University of Science and Technology</p>-->
-<!--        </div>-->
-<!--        <div class="day-events">-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">09:00 - 10:30</div>-->
-<!--                <div class="event-title">Paper Sessions (Tracks A/B)</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Track A: VR Applications in Education (Room 203, Building A)</p>-->
-<!--                    <p>Track B: AR/MR Innovative Technologies (Room 205, Building A)</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">10:30 - 11:00</div>-->
-<!--                <div class="event-title">Coffee Break</div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">11:00 - 12:30</div>-->
-<!--                <div class="event-title">Workshop: Cutting-edge VR/AR Development Technologies</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Speaker: TBD</p>-->
-<!--                    <p>Content: Introduction to the latest VR/AR development tools and technologies, including hands-on demonstrations</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">12:30 - 14:00</div>-->
-<!--                <div class="event-title">Lunch</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Location: University Cafeteria</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">14:00 - 15:30</div>-->
-<!--                <div class="event-title">Best Paper Awards</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Best Full Paper Award</p>-->
-<!--                    <p>Best Short Paper Award</p>-->
-<!--                    <p>Best Demo Award</p>-->
-<!--                    <p>Best Student Paper Award</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="event-item">-->
-<!--                <div class="event-time">15:30 - 16:30</div>-->
-<!--                <div class="event-title">Closing Ceremony</div>-->
-<!--                <div class="event-desc">-->
-<!--                    <p>Conference Summary</p>-->
-<!--                    <p>Announcement of Next Conference</p>-->
-<!--                    <p>Closing Remarks</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+    <script>
+        // Add click event to session headers to toggle content
+        document.querySelectorAll('.session-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                content.classList.toggle('active');
+            });
+        });
+    </script>
 
 <section>
     <h2 class="section-title">Social Events</h2>
@@ -296,36 +663,7 @@
         </ul>
     </div>
 
-    <div class="info-item">
-        <div class="info-icon"><i class="fas fa-chalkboard"></i></div>
-        <h3>Poster Presentations</h3>
-        <ul>
-            <div class="schedule-day">
-        <div class="day-header">
-            <h3>TBD</h3>
-             </div>
-    </div>
-            <li>Poster Size: A0 (841mm × 1189mm), Portrait orientation</li>
-<!--            <li>Exhibition Time: December 11, 16:00-18:00</li>-->
-            <li>Authors are required to stand by their posters during the exhibition time to present their work to attendees</li>
-        </ul>
-    </div>
 
-    <div class="info-item">
-        <div class="info-icon"><i class="fas fa-laptop-code"></i></div>
-        <h3>Demo Presentations</h3>
-        <ul>
-<!--            <li>Exhibition Time: December 11, 16:00-18:00</li>-->
-            <div class="schedule-day">
-        <div class="day-header">
-            <h3>TBD</h3>
-             </div>
-    </div>
-            <li>Exhibition Space: Table, power supply, and basic internet connection will be provided</li>
-            <li>Please bring your own equipment and demonstration materials</li>
-            <li>For special equipment support, please contact the organizing committee in advance</li>
-        </ul>
-    </div>
 </section>
 
 <section class="cta-section">
