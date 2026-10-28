@@ -8,6 +8,28 @@
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <style>
+        .international-program-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            column-gap: 2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .international-program-list li {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 0.85rem 0;
+            overflow-wrap: anywhere;
+        }
+
+        @media (max-width: 700px) {
+            .international-program-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
 <div id="header-container"></div>
@@ -275,6 +297,43 @@
                         <p class="member-country">China</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="committee-category" aria-labelledby="international-program-title">
+            <h2 class="committee-category-title" id="international-program-title">International Program Committee</h2>
+            <ul class="international-program-list">
+                <li>Zhigeng Pan, H3I, Beihang University, China</li>
+                <li>Nadia Thalmann, University of Geneva, Switzerland</li>
+                <li>Woontack Woo, Korea Advanced Institute of Science and Technology, South Korea</li>
+                <li>Jian Chen, The Ohio State University, USA</li>
+                <li>Ping Li, The Hong Kong Polytechnic University, Hong Kong, China</li>
+                <li>Bin Sheng, Shanghai Jiao Tong University, China</li>
+                <li>Zhihan Lyu, Xidian University, China</li>
+                <li>Yang Wen, Shenzhen University, China</li>
+                <li>Caie Xu, Zhejiang University of Science and Technology, China</li>
+                <li>Jinyuan Jia, The Hong Kong University of Science and Technology (Guangzhou), China</li>
+                <li>Meili Wang, Northwest A&amp;F University, China</li>
+                <li>Seungwoo Je, Southern University of Science and Technology, China</li>
+                <li>Qian Wang, Guangdong University of Technology, China</li>
+                <li>Qingshu Yuan, Hangzhou Normal University, China</li>
+                <li>Xianliang Xia, Nanjing University of Information Science and Technology, China</li>
+                <li>Xianxuan Lin, Nanjing University of Information Science and Technology, China</li>
+                <li>Wenzhen Yang, Zhejiang Lab</li>
+                <li>Hebei Gao, Oujiang Laboratory</li>
+                <li>Quan Wu, Nanjing University of Information Science &amp; Technology</li>
+                <li>Fuchang Liu, Hangzhou Normal University</li>
+                <li>Xiyuan Zhang, Anqing Normal University</li>
+                <li>Fengting Yan, Nantong Institute of Technology</li>
+                <li>Luming Zhang, Shanghai Jian Qiao University</li>
+                <li>Yu Zou, Jiangsu Open University</li>
+                <li>Qingfeng Tang, Anqing Normal University</li>
+                <li>Shoujiang Xu, Jiangsu Food and Pharmaceutical Science College</li>
+                <li>Xin Chen, Zhejiang Industry &amp; Trade Vocational College</li>
+                <li>Meiling Chen, Zhejiang Chinese Medical University</li>
+                <li>Pengfei Leng, Zhejiang University of Water Resources and Electric Power</li>
+                <li>Tianlun Yang, NingboTech University</li>
+            </ul>
         </section>
 
     </div>
