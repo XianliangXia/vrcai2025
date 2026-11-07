@@ -100,7 +100,7 @@ function loadSharedContent() {
                     reg.setAttribute('href', data['register']);
                     console.log(`为元素设置href: ${data['register']}`);
                 } else {
-                    reg.setAttribute('href', '#');
+                    reg.setAttribute('href', 'http://reg.vrcai.cn');
                 }
             });
 
