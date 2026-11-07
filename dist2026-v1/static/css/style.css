@@ -1010,18 +1010,12 @@ footer {
 }
 
 /* Section description */
-.section-description {
-    max-width: 800px;
-    margin: 0 auto 30px;
-    text-align: center;
-    color: var(--text-gray);
-}
-
 .speakers-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* auto-fill → auto-fit */
     gap: 40px;
     margin: 40px 0;
+    justify-items: center; /* 卡片在单元格内居中 */
 }
 
 .speaker-card {
@@ -1033,6 +1027,8 @@ footer {
     text-align: center;
     padding: 30px;
     border: 1px solid var(--border-color);
+    max-width: 650px; /* 限制最大宽度，单行时不会过度拉伸 */
+    width: 100%;     /* 在网格单元格内填满 */
 }
 
 .speaker-card:hover {
@@ -1046,30 +1042,36 @@ footer {
 
 .speaker-info {
     padding: 10px;
+    text-align: left; /* 简介文字较多时，左对齐比居中更易读 */
 }
 
 .speaker-name {
     font-size: 1.4rem;
     margin-bottom: 5px;
     color: var(--secondary-color);
+    text-align: center; /* 姓名保持居中 */
 }
 
 .speaker-title {
     color: var(--accent-color);
     font-weight: 600;
     margin-bottom: 5px;
+    text-align: center; /* 职称居中 */
 }
 
 .speaker-affiliation {
     color: var(--text-gray);
     font-size: 0.95rem;
+    text-align: center; /* 报告题目居中 */
+    font-style: italic;
 }
 
-.speaker-note {
-    text-align: center;
-    margin-top: 20px;
-    font-style: italic;
-    color: var(--text-gray);
+.speaker-bio {
+    font-size: 0.85em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 15px;
+    text-align: justify; /* 简介两端对齐 */
 }
 
 /* Schedule container */
